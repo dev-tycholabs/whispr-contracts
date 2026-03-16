@@ -1,0 +1,23 @@
+{
+    "name": "whispr-contracts",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "compile": "npx hardhat compile",
+        "test": "npx hardhat test",
+        "deploy:sepolia": "npx hardhat run scripts/deploy.ts --network sepolia",
+        "clean": "npx hardhat clean"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+        "hardhat": "^2.22.0",
+        "typescript": "^5.0.0",
+        "ts-node": "^10.9.0",
+        "@types/node": "^20.0.0"
+    },
+    "dependencies": {
+        "@fhevm/solidity": "0.9.1",
+        "@openzeppelin/contracts": "^5.3.0",
+        "@openzeppelin/confidential-contracts": "^0.3.1"
+    }
+}
